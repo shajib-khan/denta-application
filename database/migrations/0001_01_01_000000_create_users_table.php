@@ -24,6 +24,8 @@ return new class extends Migration
             $table->string('notes');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
+            $table->foreignId('doctor_id')->references('id')->on('doctor')->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });
