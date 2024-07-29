@@ -20,6 +20,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'phone',
+        'gender',
+        'days_select',
+        'time_select',
+        'medical_history',
+        'notes',
+        'doctor_id'
     ];
 
     /**
