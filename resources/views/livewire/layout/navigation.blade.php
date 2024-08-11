@@ -34,16 +34,16 @@ new class extends Component
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('')" :active="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('Appointment') }}
+               <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('doctorAll')" :active="request()->routeIs('doctorAll')" wire:navigate>
+                        {{ __('Doctor') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Doctor') }}
                     </x-nav-link>
-                </div> --}}
+                </div>  --}}
                 {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Patient') }}

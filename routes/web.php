@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Doctor\DoctorAll;
 use App\Livewire\Home\Index;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,4 @@ Route::view('profile', 'profile')
 require __DIR__.'/auth.php';
 //custom route
 //Route::get('/',Index::class)->name('home.index');
+Route::get('all-doctor',DoctorAll::class)->name('doctorAll');
